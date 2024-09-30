@@ -1,0 +1,11 @@
+version: 2
+on:
+  schedule:
+   workflow_dispatch:  
+
+  workflow_dispatch:
+updates:
+  - package-ecosystem: "gradle" # Specify the Gradle package ecosystem
+    directory: "/"               # Location of your build.gradle file
+    schedule:
+      interval: "daily"         # Check for updates weekly
